@@ -1,10 +1,24 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <full-page>
+      <welcome class="section" />
+      <projects class="section" />
+      <contact class="section" />
+    </full-page>
+  </div>
 </template>
 
 <script>
+import Welcome from "./components/Welcome.vue";
+import Projects from "./components/Projects.vue";
+import Contact from "./components/Contact.vue";
 export default {
   name: "App",
+  components: {
+    Welcome,
+    Projects,
+    Contact,
+  },
 };
 </script>
 
