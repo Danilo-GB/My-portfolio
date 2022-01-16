@@ -45,6 +45,9 @@ export default {
 * {
   font-family: "Oswald", sans-serif;
   color: #fff;
+  transition: all 0.5s ease;
+}
+body {
   background-color: var(--main-blue);
 }
 .section {

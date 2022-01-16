@@ -1,8 +1,8 @@
 <template>
   <div
-    class="nav-bar flex flex-col justify-between items-center fixed left-0 h-full w-1/6 z-10"
+    class="nav-bar flex flex-col justify-between items-center fixed left-0 h-full w-1/6 py-4 md:py-8 z-10"
   >
-    <div class="item text-xl text-center pt-10">Danilo Garcia</div>
+    <div class="item text-xl text-center">Danilo Garcia</div>
     <div class="item">
       <ul id="menu">
         <li data-menuanchor="home" class="active">
@@ -61,16 +61,19 @@
   width: 30%;
   height: 100%;
   background-color: white;
-  transition: all 0.3s ease;
 }
 #menu li.active a {
   width: 60%;
 }
 .item a img {
-  margin: 0 20%;
+  margin: 0 auto;
   width: 50px;
   height: 50px;
-  transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  .item a img {
+    margin: 0 15%;
+  }
 }
 .item a img:hover {
   width: 60px;
