@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <full-page>
+    <nav-bar />
+    <full-page :options="options">
       <welcome class="section" />
+      <projects class="section" />
+      <projects class="section" />
       <projects class="section" />
       <contact class="section" />
     </full-page>
@@ -9,15 +12,25 @@
 </template>
 
 <script>
+import NavBar from "./components/NavBar.vue";
 import Welcome from "./components/Welcome.vue";
 import Projects from "./components/Projects.vue";
 import Contact from "./components/Contact.vue";
 export default {
   name: "App",
   components: {
+    NavBar,
     Welcome,
     Projects,
     Contact,
+  },
+  data() {
+    return {
+      options: {
+        menu: "#menu",
+        anchors: ["home", "projects1", "projects2", "projects3", "contact"],
+      },
+    };
   },
 };
 </script>
@@ -31,5 +44,10 @@ export default {
 }
 * {
   font-family: "Oswald", sans-serif;
+  color: #fff;
+  background-color: var(--main-blue);
+}
+.section {
+  margin-left: 17%;
 }
 </style>
