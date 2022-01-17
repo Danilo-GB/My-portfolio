@@ -72,13 +72,14 @@ export default {};
 
 .background-circle {
   position: absolute;
-  top: calc(100vh - 48rem);
+  top: calc(8rem);
   right: -10rem;
-  width: 50%;
+  width: 60%;
   height: 40rem;
   background-color: rgba(7, 33, 66, 1);
   border-radius: 40rem;
   overflow: hidden;
+  z-index: -1;
   box-shadow: 0px 0px 0px 0px rgb(245, 245, 245),
     0px 0px 0px 80px rgba(7, 33, 66, 0.8),
     0px 0px 0px 160px rgba(7, 33, 66, 0.5),
@@ -90,8 +91,7 @@ export default {};
   position: absolute;
   left: 0;
   bottom: -1rem;
-
-  filter: contrast(140%);
+  filter: contrast(140%) drop-shadow(0 0 20px #f5f5f5);
   pointer-events: none;
 }
 /* RESPONSIVE */
@@ -149,20 +149,10 @@ export default {};
   }
 }
 /* ANIMATIONS */
-.branding-name,
-.separator {
-  transform: translateX(-100%);
-}
 
-.sub-branding {
-  transform: translateX(-125%);
-}
-:target .separator {
-  opacity: 1;
-}
-:target .branding-name,
-:target .sub-branding,
-:target .separator {
-  transform: translateX(0%);
+.contact-button:hover {
+  background-color: #fff;
+  color: var(--main-blue);
+  letter-spacing: 0.1rem;
 }
 </style>

@@ -2,7 +2,7 @@
   <div
     class="nav-bar flex flex-col justify-between items-center fixed left-0 h-full w-1/6 py-4 md:py-8 z-10"
   >
-    <div class="item text-xl text-center">Danilo Garcia</div>
+    <div class="item text-xl text-center">Welcome</div>
     <div class="item">
       <ul id="menu">
         <li data-menuanchor="home" class="active">
@@ -11,6 +11,7 @@
         <li data-menuanchor="projects1"><a href="#projects1"></a></li>
         <li data-menuanchor="projects2"><a href="#projects2"></a></li>
         <li data-menuanchor="projects3"><a href="#projects3"></a></li>
+        <li data-menuanchor="about"><a href="#about"></a></li>
         <li data-menuanchor="contact"><a href="#contact"></a></li>
       </ul>
     </div>

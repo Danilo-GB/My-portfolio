@@ -6,6 +6,7 @@
       <projects class="section" />
       <projects class="section" />
       <projects class="section" />
+      <about class="section" />
       <contact class="section" />
     </full-page>
   </div>
@@ -15,6 +16,7 @@
 import NavBar from "./components/NavBar.vue";
 import Welcome from "./components/Welcome.vue";
 import Projects from "./components/Projects.vue";
+import About from "./components/About.vue";
 import Contact from "./components/Contact.vue";
 export default {
   name: "App",
@@ -22,13 +24,21 @@ export default {
     NavBar,
     Welcome,
     Projects,
+    About,
     Contact,
   },
   data() {
     return {
       options: {
         menu: "#menu",
-        anchors: ["home", "projects1", "projects2", "projects3", "contact"],
+        anchors: [
+          "home",
+          "projects1",
+          "projects2",
+          "projects3",
+          "about",
+          "contact",
+        ],
       },
     };
   },
