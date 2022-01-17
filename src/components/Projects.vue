@@ -1,9 +1,8 @@
 <template>
   <div>
     <div id="home" class="w-full h-full relative flex flex-col justify-center">
-      <div class="background-circle"></div>
       <img
-        :src="`../assets/${projectDetail.img}`"
+        :src="require(`../assets/${projectDetail.img}`)"
         alt="Project image"
         class="project-image"
       />
@@ -74,22 +73,6 @@ export default {
   background-color: var(--main-red);
 }
 
-.background-circle {
-  position: absolute;
-  top: calc(8rem);
-  right: -10rem;
-  width: 60%;
-  height: 40rem;
-  background-color: rgba(7, 33, 66, 1);
-  border-radius: 40rem;
-  z-index: -1;
-  box-shadow: 0px 0px 0px 0px rgb(245, 245, 245),
-    0px 0px 0px 80px rgba(7, 33, 66, 0.8),
-    0px 0px 0px 160px rgba(7, 33, 66, 0.5),
-    0px 0px 0px 240px rgba(7, 33, 66, 0.3),
-    0px 0px 0px 320px rgba(7, 33, 66, 0.2),
-    0px 0px 0px 400px rgba(7, 33, 66, 0.1);
-}
 .project-image {
   position: absolute;
   right: 4rem;
@@ -97,7 +80,8 @@ export default {
   width: 700px;
   height: 563px;
   z-index: -1;
-  filter: saturate(180%) contrast(120%);
+  filter: saturate(150%);
+  background-color: var(--complementary-blue);
   object-fit: contain;
 }
 /* RESPONSIVE */
@@ -116,12 +100,6 @@ export default {
     width: 100px;
     height: 20px;
     margin-left: auto;
-  }
-  .background-circle {
-    top: 0;
-    right: -10rem;
-    width: 50%;
-    height: 40rem;
   }
   .project-image {
     top: 0;
