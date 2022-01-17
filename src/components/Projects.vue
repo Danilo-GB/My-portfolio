@@ -3,7 +3,7 @@
     <div id="home" class="w-full h-full relative flex flex-col justify-center">
       <div class="background-circle"></div>
       <img
-        :src="`/img/${projectDetail.img}`"
+        :src="`../assets/${projectDetail.img}`"
         alt="Project image"
         class="project-image"
       />

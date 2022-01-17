@@ -3,18 +3,18 @@
     "id": "open-radio",
     "name": "OPEN RADIO",
     "type": "Web aplication",
-    "img": "mockup-open-radio.c316144e.png"
+    "img": "mockup-open-radio.png"
   },
   {
     "id": "quillos-landing",
     "name": "QUILLOS STORE",
     "type": "Web aplication",
-    "img": "mockup-quillos-landing.8e79df7e.png"
+    "img": "mockup-quillos-landing.png"
   },
   {
     "id": "crypto-viewer",
     "name": "CRYPTO VIEWER",
     "type": "Web aplication",
-    "img": "mockup-crypto-viewer.0ad4e95f.png"
+    "img": "mockup-crypto-viewer.png"
   }
 ]
