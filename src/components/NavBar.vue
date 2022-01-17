@@ -1,8 +1,8 @@
 <template>
   <div
-    class="nav-bar flex flex-col justify-between items-center fixed left-0 h-full w-1/6 py-4 md:py-8 z-10"
+    class="nav-bar flex flex-col justify-evenly md:justify-between items-center fixed left-0 h-full w-1/6 py-4 md:py-8 z-10"
   >
-    <div class="item text-xl text-center">Welcome</div>
+    <div class="item hidden md:block text-xl text-center">Welcome</div>
     <div class="item">
       <ul id="menu">
         <li data-menuanchor="home" class="active">

@@ -34,9 +34,11 @@ export default {};
 .branding-name {
   font-size: 5rem;
   letter-spacing: 1rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 .sub-branding {
   font-size: 2rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .contact-button {

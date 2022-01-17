@@ -30,9 +30,11 @@ export default {};
 .project-name {
   font-size: 5rem;
   letter-spacing: 1rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 .project-detail {
   font-size: 1.3rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .see-more-button {
@@ -120,8 +122,9 @@ export default {};
     height: 40rem;
   }
   .project-image {
-    top: 1rem;
+    top: 0;
     width: 80%;
+    height: 50%;
   }
   .see-more-button {
     margin-left: auto;
