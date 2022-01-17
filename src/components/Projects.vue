@@ -3,16 +3,16 @@
     <div id="home" class="w-full h-full relative flex flex-col justify-center">
       <div class="background-circle"></div>
       <img
-        src="../assets/mockup-open-radio.png"
+        :src="`/img/${projectDetail.img}`"
         alt="Project image"
         class="project-image"
       />
-      <div class="project-name">OPEN RADIO</div>
+      <div class="project-name">{{ projectDetail.name }}</div>
       <ul class="separator my-14">
         <li></li>
         <li></li>
       </ul>
-      <div class="project-detail">Web aplication</div>
+      <div class="project-detail">{{ projectDetail.type }}</div>
       <div class="project-detail">
         <a class="see-more-button" href="mailto:rubendanilo.garcia@gmail.com"
           >See more</a
@@ -23,14 +23,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    projectDetail: {
+      type: Object,
+    },
+  },
+};
 </script>
 
 <style>
 .project-name {
   font-size: 5rem;
   letter-spacing: 1rem;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 10px 1px rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5);
 }
 .project-detail {
   font-size: 1.3rem;
@@ -93,13 +99,9 @@ export default {};
   z-index: -1;
   filter: saturate(180%) contrast(120%);
   object-fit: contain;
-  pointer-events: none;
 }
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  #home {
-    padding: 5rem;
-  }
   .project-name {
     margin-top: auto;
     font-size: 3rem;

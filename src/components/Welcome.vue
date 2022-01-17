@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="home" class="w-full h-full relative flex flex-col justify-center">
+    <div class="w-11/12 h-5/6 relative flex flex-col justify-center">
       <div class="background-circle">
         <img
           src="../assets/brand-img-2.png"

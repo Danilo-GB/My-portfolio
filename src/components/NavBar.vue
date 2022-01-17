@@ -1,8 +1,12 @@
 <template>
   <div
-    class="nav-bar flex flex-col justify-evenly md:justify-between items-center fixed left-0 h-full w-1/6 py-4 md:py-8 z-10"
+    class="nav-bar flex flex-col justify-evenly md:justify-between fixed left-0 h-full w-1/6 py-4 md:py-8 z-10"
   >
-    <div class="item hidden md:block text-xl text-center">Welcome</div>
+    <div class="item">
+      <a href="#home">
+        <img src="../assets/LogoPersonal.svg" alt="logo" />
+      </a>
+    </div>
     <div class="item">
       <ul id="menu">
         <li data-menuanchor="home" class="active">
@@ -48,14 +52,18 @@
 <style>
 .nav-bar .item {
   width: 100%;
-  height: 33%;
+  height: 100%;
+  overflow: hidden;
 }
-
+#menu {
+  position: relative;
+  top: 25%;
+}
 #menu li {
   position: relative;
   width: 30%;
   height: 3px;
-  margin: 30px 20%;
+  margin: 1rem 20%;
 }
 #menu a {
   position: absolute;
@@ -68,8 +76,8 @@
 }
 .item a img {
   margin: 0 auto;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 @media (min-width: 768px) {
   .item a img {

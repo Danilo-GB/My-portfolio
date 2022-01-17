@@ -2,10 +2,13 @@
   <div id="app">
     <nav-bar />
     <full-page :options="options">
-      <welcome class="section" />
-      <projects class="section" />
-      <projects class="section" />
-      <projects class="section" />
+      <welcome id="home" class="section" />
+      <projects
+        v-for="project in projectsData"
+        :key="project.id"
+        :projectDetail="project"
+        class="section"
+      />
       <about class="section" />
       <contact class="section" />
     </full-page>
@@ -18,6 +21,7 @@ import Welcome from "./components/Welcome.vue";
 import Projects from "./components/Projects.vue";
 import About from "./components/About.vue";
 import Contact from "./components/Contact.vue";
+import projectsData from "./assets/projects.json";
 export default {
   name: "App",
   components: {
@@ -29,6 +33,7 @@ export default {
   },
   data() {
     return {
+      projectsData,
       options: {
         menu: "#menu",
         anchors: [
