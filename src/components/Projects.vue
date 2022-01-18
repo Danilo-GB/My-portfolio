@@ -112,7 +112,8 @@ export default {
     width: 100%;
     height: 50%;
     object-fit: cover;
-    animation: slide-img 20s ease infinite;
+    object-position: center;
+    animation: none;
   }
   .see-more-button {
     margin-left: auto;
@@ -134,26 +135,6 @@ export default {
     transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
-  }
-}
-@keyframes slide-img {
-  0% {
-    object-position: left;
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.3);
-  }
-  50% {
-    object-position: right;
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.3);
-  }
-  100% {
-    object-position: left;
     transform: scale(1);
   }
 }
