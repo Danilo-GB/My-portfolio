@@ -9,14 +9,9 @@
     </div>
     <div class="item">
       <ul id="menu">
-        <li data-menuanchor="home" class="active">
-          <a href="#home"></a>
+        <li v-for="anchor in anchors" :key="anchor" :data-menuanchor="anchor">
+          <a :href="`#${anchor}`"></a>
         </li>
-        <li data-menuanchor="projects1"><a href="#projects1"></a></li>
-        <li data-menuanchor="projects2"><a href="#projects2"></a></li>
-        <li data-menuanchor="projects3"><a href="#projects3"></a></li>
-        <li data-menuanchor="about"><a href="#about"></a></li>
-        <li data-menuanchor="contact"><a href="#contact"></a></li>
       </ul>
     </div>
     <div class="item">
@@ -48,7 +43,15 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  props: {
+    anchors: {
+      type: Array,
+    },
+  },
+};
+</script>
 <style>
 .nav-bar .item {
   width: 100%;

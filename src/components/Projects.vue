@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="home" class="w-full h-full relative flex flex-col justify-center">
+    <div class="w-full h-full relative flex flex-col justify-center">
       <img
         :src="require(`../assets/${projectDetail.img}`)"
         alt="Project image"
@@ -13,8 +13,12 @@
       </ul>
       <div class="project-detail">{{ projectDetail.type }}</div>
       <div class="project-detail">
-        <a class="see-more-button" href="mailto:rubendanilo.garcia@gmail.com"
-          >See more</a
+        <a
+          class="see-more-button"
+          :href="`https://${projectDetail.id}.netlify.app`"
+          target="_blank"
+          ref="noreferer noopener"
+          >View website</a
         >
       </div>
     </div>
@@ -137,5 +141,15 @@ export default {
   background-color: #fff;
   color: var(--main-blue);
   letter-spacing: 0.1rem;
+}
+
+.project-name {
+  transform: translateX(0);
+}
+:target .project-name,
+:target .project-detail,
+:target .project-image,
+:target .see-more-button {
+  transform: translateX(0);
 }
 </style>

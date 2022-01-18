@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-bar />
+    <nav-bar :anchors="options.anchors" />
     <full-page :options="options">
       <welcome id="home" class="section" />
       <projects
@@ -36,16 +36,14 @@ export default {
       projectsData,
       options: {
         menu: "#menu",
-        anchors: [
-          "home",
-          "projects1",
-          "projects2",
-          "projects3",
-          "about",
-          "contact",
-        ],
+        anchors: ["home", "about", "contact"],
       },
     };
+  },
+  created() {
+    this.projectsData.forEach((project, idx) => {
+      this.options.anchors.splice(idx + 1, 0, project.id);
+    });
   },
 };
 </script>
