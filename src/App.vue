@@ -69,5 +69,6 @@ body {
 }
 .section {
   margin-left: 17%;
+  margin-right: 5%;
 }
 </style>

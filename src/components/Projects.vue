@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full h-full relative flex flex-col justify-center">
+    <div class="w-full h-5/6 mt-4 relative flex flex-col justify-center">
       <img
         :src="require(`../assets/${projectDetail.img}`)"
         alt="Project image"
@@ -49,7 +49,7 @@ export default {
 .see-more-button {
   display: block;
   width: 10rem;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   margin-top: 3rem;
   text-align: center;
@@ -79,8 +79,8 @@ export default {
 
 .project-image {
   position: absolute;
-  right: 4rem;
-  top: calc(50% - 280px);
+  right: 0;
+  top: calc(60% - 280px);
   width: 700px;
   height: 563px;
   z-index: -1;
@@ -112,7 +112,7 @@ export default {
   }
   .see-more-button {
     margin-left: auto;
-    width: 6rem;
+    width: 8rem;
   }
 }
 @media (max-width: 414px) {
