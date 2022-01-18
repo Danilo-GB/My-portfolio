@@ -7,7 +7,12 @@
         <li></li>
       </ul>
       <div>
-        <form name="contact" class="text-black text-md" netlify>
+        <form
+          name="contact"
+          class="text-black text-md"
+          netlify
+          netlify-honeypot="bot-field"
+        >
           <input
             type="text"
             name="name"
