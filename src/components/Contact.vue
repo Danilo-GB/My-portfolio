@@ -10,7 +10,7 @@
         <form
           name="contact"
           class="text-black text-md"
-          netlify
+          data-netlify
           netlify-honeypot="bot-field"
           @submit.prevent="handleSubmit"
         >
@@ -72,15 +72,15 @@ export default {
       fetch("/", {
         method: "post",
         headers: {
-          "Content-Type": "application/x-www-form-urlenccoded",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
         body: this.encode({
           "form-name": "contact",
           ...this.form,
         }),
       })
-        .then(() => this.formSent)
-        .catch((e) => (this.formStatus = "Oops, error"));
+        .then(() => this.formSent())
+        .catch(() => (this.formStatus = "Oops, error"));
     },
     formSent() {
       this.formStatus = "SENT";
