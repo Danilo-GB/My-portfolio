@@ -142,14 +142,4 @@ export default {
   color: var(--main-blue);
   letter-spacing: 0.1rem;
 }
-
-.project-name {
-  transform: translateX(0);
-}
-:target .project-name,
-:target .project-detail,
-:target .project-image,
-:target .see-more-button {
-  transform: translateX(0);
-}
 </style>

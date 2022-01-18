@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+    <floating-shapes />
     <nav-bar :anchors="options.anchors" />
     <full-page :options="options">
-      <welcome id="home" class="section" />
+      <welcome class="section" />
       <projects
         v-for="project in projectsData"
         :key="project.id"
@@ -16,6 +17,7 @@
 </template>
 
 <script>
+import FloatingShapes from "./components/FloatingShapes.vue";
 import NavBar from "./components/NavBar.vue";
 import Welcome from "./components/Welcome.vue";
 import Projects from "./components/Projects.vue";
@@ -25,6 +27,7 @@ import projectsData from "./assets/projects.json";
 export default {
   name: "App",
   components: {
+    FloatingShapes,
     NavBar,
     Welcome,
     Projects,
@@ -37,6 +40,7 @@ export default {
       options: {
         menu: "#menu",
         anchors: ["home", "about", "contact"],
+        scrollingSpeed: 500,
       },
     };
   },
