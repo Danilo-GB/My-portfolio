@@ -13,6 +13,7 @@
           netlify
           netlify-honeypot="bot-field"
         >
+          <input type="text" name="bot-field" hidden />
           <input
             type="text"
             name="name"
