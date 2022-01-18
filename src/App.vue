@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <floating-shapes />
+    <floating-shapes class="hidden md:block" />
     <nav-bar :anchors="options.anchors" />
     <full-page :options="options">
       <welcome class="section" />

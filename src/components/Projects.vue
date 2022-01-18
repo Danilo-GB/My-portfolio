@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="w-full h-5/6 mt-4 relative flex flex-col justify-center">
+    <div
+      class="w-full h-full py-4 md:h-5/6 mt-4 relative flex flex-col justify-center"
+    >
       <img
         :src="require(`../assets/${projectDetail.img}`)"
         alt="Project image"
@@ -85,8 +87,8 @@ export default {
   height: 563px;
   z-index: -1;
   filter: saturate(150%);
-  background-color: var(--complementary-blue);
   object-fit: contain;
+  animation: zoom-img 10s ease infinite;
 }
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -107,32 +109,14 @@ export default {
   }
   .project-image {
     top: 0;
-    width: 80%;
+    width: 100%;
     height: 50%;
+    object-fit: cover;
+    animation: slide-img 20s ease infinite;
   }
   .see-more-button {
     margin-left: auto;
     width: 8rem;
-  }
-}
-@media (max-width: 414px) {
-  #home {
-    padding: 2rem;
-  }
-  .project-name {
-    margin-top: auto;
-    font-size: 2rem;
-    text-align: right;
-  }
-  .project-detail {
-    font-size: 1rem;
-    text-align: right;
-  }
-
-  .separator {
-    width: 100px;
-    height: 20px;
-    margin-left: auto;
   }
 }
 /* ANIMATIONS */
@@ -141,5 +125,36 @@ export default {
   background-color: #fff;
   color: var(--main-blue);
   letter-spacing: 0.1rem;
+}
+@keyframes zoom-img {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide-img {
+  0% {
+    object-position: left;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    object-position: right;
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+    object-position: left;
+    transform: scale(1);
+  }
 }
 </style>

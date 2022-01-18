@@ -91,4 +91,8 @@ export default {
   width: 60px;
   height: 60px;
 }
+#menu {
+  position: relative;
+  top: 10%;
+}
 </style>
