@@ -72,7 +72,7 @@ export default {
       fetch("/", {
         method: "post",
         headers: {
-          "Content-Type": "application/x-www-urlenccoded",
+          "Content-Type": "application/x-www-form-urlenccoded",
         },
         body: this.encode({
           "form-name": "contact",
