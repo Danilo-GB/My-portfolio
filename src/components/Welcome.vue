@@ -18,9 +18,7 @@
       </ul>
       <div class="sub-branding">&#60; Fullstack web developer /&#62;</div>
       <div class="sub-branding">
-        <a class="contact-button" href="mailto:rubendanilo.garcia@gmail.com"
-          >Hire me!</a
-        >
+        <a class="contact-button" href="#contact">Hire me!</a>
       </div>
     </div>
   </div>
