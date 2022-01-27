@@ -73,9 +73,9 @@ export default {};
 .background-circle {
   position: absolute;
   top: calc(8rem);
-  right: -10rem;
-  width: 60%;
-  height: 40rem;
+  right: -15rem;
+  width: 50%;
+  height: 30rem;
   background-color: rgba(7, 33, 66, 1);
   border-radius: 40rem;
   overflow: hidden;
@@ -89,10 +89,11 @@ export default {};
 }
 .brand-img {
   position: absolute;
-  left: 0;
-  bottom: -1rem;
-  filter: contrast(140%) drop-shadow(0 0 20px #f5f5f5);
+  left: -2rem;
+  bottom: -3rem;
+  filter: contrast(140%) drop-shadow(0 0 20px rgb(0, 0, 0));
   pointer-events: none;
+  transform: scale(1);
 }
 /* RESPONSIVE */
 @media (max-width: 768px) {

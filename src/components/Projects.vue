@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="w-full h-full py-4 md:h-5/6 mt-4 relative flex flex-col justify-center"
+      class="w-full h-full py-4 pr-10 pb-10 md:h-5/6 mt-4 relative flex flex-col justify-center"
     >
       <img
         :src="require(`../assets/${projectDetail.img}`)"
@@ -91,7 +91,7 @@ export default {
   animation: zoom-img 10s ease infinite;
 }
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .project-name {
     margin-top: auto;
     font-size: 3rem;

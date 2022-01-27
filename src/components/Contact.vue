@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="w-11/12 h-5/6 relative flex flex-col justify-center">
+    <div class="w-11/12 h-full relative flex flex-col justify-center">
       <div class="branding-name">GET IN TOUCH</div>
-      <ul class="separator my-5 md:my-14">
+      <ul class="separator my-5 md:my-6">
         <li></li>
         <li></li>
       </ul>

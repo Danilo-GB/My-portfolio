@@ -4,8 +4,8 @@
       <div class="section-name">ABOUT ME</div>
 
       <div class="flex flex-row w-full h-1/3 justify-center">
-        <div class="w-1/3 title">WHO I AM</div>
-        <div class="w-2/3 detail">
+        <div class="w-1/4 title">WHO I AM</div>
+        <div class="w-3/4 detail">
           Hi, I'm Danilo, Junior software developer and Telecommunications
           engineer student with 90 GPA, passionate about Frontend and Backend,
           application of good practices and quality development, I love teamwork
@@ -13,8 +13,8 @@
         </div>
       </div>
       <div class="flex flex-row w-full h-1/3 justify-center">
-        <div class="w-1/3 title">PASSION</div>
-        <div class="w-2/3 detail">
+        <div class="w-1/4 title">PASSION</div>
+        <div class="w-3/4 detail">
           <ul>
             <li>
               Frontend: My greatest field of experience (+3 Yrs), bringing to
@@ -30,8 +30,8 @@
         </div>
       </div>
       <div class="flex flex-row w-full h-1/3 justify-center">
-        <div class="w-1/3 title">SKILL SET</div>
-        <div class="w-2/3 detail flex flex-row justify-evenly">
+        <div class="w-1/4 title">SKILL SET</div>
+        <div class="w-3/4 detail flex flex-row justify-evenly">
           <div class="inline">
             <img
               width="50"
@@ -103,7 +103,7 @@ export default {
   border-bottom: 1px solid var(--main-red);
 }
 .detail {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 300;
   padding: 3rem;
 }
