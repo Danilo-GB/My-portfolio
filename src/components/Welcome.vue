@@ -5,7 +5,7 @@
         <img
           src="../assets/brand-img-2.png"
           alt="PersonalImage"
-          class="brand-img"
+          class="brand-img hidden"
         />
       </div>
       <div class="branding-name">
