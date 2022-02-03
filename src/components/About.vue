@@ -7,7 +7,7 @@
         <div class="w-1/4 title">WHO I AM</div>
         <div class="w-3/4 detail">
           Hi, I'm Danilo, Junior software developer and Telecommunications
-          engineer student with 90 GPA, passionate about Frontend and Backend,
+          engineer student, passionate about Frontend and Backend,
           application of good practices and quality development, I love teamwork
           and always maintain a good work environment.
         </div>
@@ -17,7 +17,7 @@
         <div class="w-3/4 detail">
           <ul>
             <li>
-              Frontend: My greatest field of experience (+3 Yrs), bringing to
+              Frontend: My greatest field of experience, bringing to
               reality ui and ux designs with clean and readable code.
             </li>
             <li>
