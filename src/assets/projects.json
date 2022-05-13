@@ -6,12 +6,6 @@
     "img": "mockup-open-radio.png"
   },
   {
-    "id": "quillos-landing",
-    "name": "QUILLOS STORE",
-    "type": "Web aplication",
-    "img": "mockup-quillos-landing.png"
-  },
-  {
     "id": "crypto-viewer",
     "name": "CRYPTO VIEWER",
     "type": "Web aplication",
